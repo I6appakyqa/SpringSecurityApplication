@@ -1,5 +1,5 @@
 package com.example.springsecurityapplication.enumm;
 
 public enum Status {
-    Принят, Оформлен, Ожидает, Получен
+    Принят, Оформлен, Ожидает, Получен, Архив
 }

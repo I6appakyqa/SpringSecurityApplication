@@ -1,6 +1,5 @@
 package com.example.springsecurityapplication.models;
 
-
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -12,8 +11,7 @@ public class Category {
     private int id;
 
     private String name;
-
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy="category", fetch = FetchType.EAGER)
     private List<Product> product;
 
     public int getId() {

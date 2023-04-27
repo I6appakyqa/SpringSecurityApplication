@@ -5,11 +5,9 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "product_cart")
 public class Cart {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(name = "person_id")
     private int personId;
 
@@ -22,6 +20,7 @@ public class Cart {
     }
 
     public Cart() {
+
     }
 
     public int getId() {
