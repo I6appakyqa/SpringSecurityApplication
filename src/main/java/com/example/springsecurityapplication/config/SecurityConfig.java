@@ -32,7 +32,7 @@ public class SecurityConfig {
                 .loginProcessingUrl("/process_login") //указывает на какой адресс отправляются данные из form
                 .defaultSuccessUrl("/person account",true) // после успешной аутентификации отправить пользоватьеля на эту страницу
                 .failureUrl("/authentication?error")//куда отправляется не авторизованный пользователь
-                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/authentication");
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/index");
         return http.build();
 
     }
